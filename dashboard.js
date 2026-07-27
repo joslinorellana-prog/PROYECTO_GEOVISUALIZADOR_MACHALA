@@ -93,15 +93,21 @@ const dashboardData = {
        ÁREAS VERDES
        ================================================== */
 
-    areasVerdes: {
+   areasVerdes: {
 
-        area: "46 821.93 m²",
+    area: "46 821,93 m²",
 
-        indicador: "1.04",
+    indicador: "1,04",
 
-        deficit: "35.87 ha"
+    recomendado: "9,00",
 
-    },
+    cobertura: "11,55%",
+
+    deficit: "35,87 ha",
+
+    deficitPorcentaje: "88,45%"
+
+},
 
 
     /* ==================================================
@@ -210,30 +216,60 @@ function cargarIndicadores() {
     }
 
 
-    /* ÁREAS VERDES */
+ /* ==================================================
+   ÁREAS VERDES
+   ================================================== */
 
-    const greenArea = document.getElementById("greenArea");
+const greenArea = document.getElementById("greenArea");
 
-    if (greenArea) {
-        greenArea.innerHTML =
-            dashboardData.areasVerdes.area;
-    }
-
-
-    const greenValue = document.getElementById("greenValue");
-
-    if (greenValue) {
-        greenValue.innerHTML =
-            dashboardData.areasVerdes.indicador;
-    }
+if (greenArea) {
+    greenArea.innerHTML =
+        dashboardData.areasVerdes.area;
+}
 
 
-    const greenDeficit = document.getElementById("greenDeficit");
+const greenValue = document.getElementById("greenValue");
 
-    if (greenDeficit) {
-        greenDeficit.innerHTML =
-            dashboardData.areasVerdes.deficit;
-    }
+if (greenValue) {
+    greenValue.innerHTML =
+        dashboardData.areasVerdes.indicador;
+}
+
+
+const greenRecommended =
+    document.getElementById("greenRecommended");
+
+if (greenRecommended) {
+    greenRecommended.innerHTML =
+        dashboardData.areasVerdes.recomendado;
+}
+
+
+const greenCoverage =
+    document.getElementById("greenCoverage");
+
+if (greenCoverage) {
+    greenCoverage.innerHTML =
+        dashboardData.areasVerdes.cobertura;
+}
+
+
+const greenDeficit =
+    document.getElementById("greenDeficit");
+
+if (greenDeficit) {
+    greenDeficit.innerHTML =
+        dashboardData.areasVerdes.deficit;
+}
+
+
+const greenDeficitPercent =
+    document.getElementById("greenDeficitPercent");
+
+if (greenDeficitPercent) {
+    greenDeficitPercent.innerHTML =
+        dashboardData.areasVerdes.deficitPorcentaje;
+}
 
 
     /* RIESGO */
