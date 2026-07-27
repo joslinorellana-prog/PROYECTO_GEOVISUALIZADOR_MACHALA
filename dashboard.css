@@ -3,18 +3,26 @@
    =========================== */
 
 :root{
-    --primary:#1565C0;
-    --primary-dark:#0D47A1;
-    --secondary:#1E88E5;
-    --success:#43A047;
-    --warning:#FB8C00;
-    --danger:#E53935;
-    --bg:#f4f7fb;
-    --card:#ffffff;
-    --text:#263238;
-    --border:#dfe5ec;
-    --shadow:0 6px 18px rgba(0,0,0,.15);
-    --radius:14px;
+
+    --primary:#2563EB;
+    --primary-dark:#1E40AF;
+
+    --bg:#081220;
+
+    --card:#0F172A;
+
+    --card2:#132238;
+
+    --text:#F8FAFC;
+
+    --text2:#94A3B8;
+
+    --border:#1E293B;
+
+    --shadow:0 15px 35px rgba(0,0,0,.45);
+
+    --radius:18px;
+
 }
 
 body{
